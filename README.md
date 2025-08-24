@@ -12,9 +12,9 @@ This project allows you to extend your Linux desktop to a tablet using WayVNC wi
 
 ### Linux (Hyprland)
 
-1. install linux packages (on arch linux use)
+1. install linux packages for arch linux (use your appropriate linux distro package manager)
 ```
-sudo pacman -S wayvnc openssl
+yay -S wayvnc openssl
 ```
 
 2. Clone the repo:
