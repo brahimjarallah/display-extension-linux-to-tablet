@@ -15,6 +15,7 @@ This project allows you to extend your Linux desktop to a tablet using WayVNC wi
 1. install linux packages (on arch linux use)
 ```
 sudo pacman -S wayvnc openssl
+```
 
 2. Clone the repo:
 ```
