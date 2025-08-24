@@ -48,8 +48,9 @@ Install any VNC viewer (e.g., bVNC, VNC Viewer)
 Connect to the Linux PC using its IP and port 5900
 ```
 
-7. Troubleshooting
-# Usage on CLI:
+## Troubleshooting
+
+### Usage on CLI:
 Start extending screen:
 ```
 ./scripts/extend_tablet.sh start
