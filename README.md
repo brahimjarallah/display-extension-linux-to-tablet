@@ -13,36 +13,36 @@ This project allows you to extend your Linux desktop to a tablet using WayVNC wi
 ### Linux (Hyprland)
 
 1. install linux packages (on arch linux use)
-```bash
+```
 sudo pacman -S wayvnc openssl
 
 2. Clone the repo:
-```bash
+```
 cd ~
 git clone https://github.com/brahimjarallah/display-extension-linux-to-tablet.git
 cd ./display-extension-linux-to-tablet
 ```
 
 3. Make the script executable:
-```bash
+```
 chmod +x scripts/extend_tablet.sh
 ```
 
 4. Bind only to USB tether interface recommanded and faster than wireless connection [replace with actual USB IP if static] (~/.config/wayvnc/config)
-```bash
+```
 address=0.0.0.0                                                                                                                         
 port=5900                                                                                                                               
 enable_auth=false                                                                                                                       
 ```
 
 5. Configure Hyprland keybinding (~/.config/hypr/hyprland.conf):
-```bash
+```
 bind=SUPER,Y,exec,~/display-extension-linux-to-tablet/scripts/extend_tablet.sh start
 bind=SUPER,SHIFT,Y,exec,~/display-extension-linux-to-tablet/scripts/extend_tablet.sh stop
 ```
 
 6. On Tablet
-```bash
+```
 Install any VNC viewer (e.g., bVNC, VNC Viewer)
 Connect to the Linux PC using its IP and port 5900
 ```
@@ -50,10 +50,10 @@ Connect to the Linux PC using its IP and port 5900
 7. Troubleshooting
 # Usage on CLI:
 Start extending screen:
-```bash
+```
 ./scripts/extend_tablet.sh start
 ```
 Stop extending screen:
-```bash
+```
 ./scripts/extend_tablet.sh stop
 ```
