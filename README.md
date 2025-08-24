@@ -13,7 +13,8 @@ This project allows you to extend your Linux desktop to a tablet using WayVNC wi
 ### Linux (Hyprland)
 1. Clone the repo:
 ```bash
-https://github.com/brahimjarallah/display-extension-linux-to-tablet.git
+cd ~
+git clone https://github.com/brahimjarallah/display-extension-linux-to-tablet.git
 cd ./display-extension-linux-to-tablet
 
 Make the script executable:
