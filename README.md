@@ -20,25 +20,31 @@ sudo pacman -S wayvnc openssl
 cd ~
 git clone https://github.com/brahimjarallah/display-extension-linux-to-tablet.git
 cd ./display-extension-linux-to-tablet
+```
 
-3.Make the script executable:
+3. Make the script executable:
+
 chmod +x scripts/extend_tablet.sh
 
-4.Bind only to USB tether interface recommanded and faster than wireless connection [replace with actual USB IP if static] (~/.config/wayvnc/config)
+4. Bind only to USB tether interface recommanded and faster than wireless connection [replace with actual USB IP if static] (~/.config/wayvnc/config)
+
 address=0.0.0.0                                                                                                                         
 port=5900                                                                                                                               
 enable_auth=false                                                                                                                       
 
-5.Configure Hyprland keybinding (~/.config/hypr/hyprland.conf):
+5. Configure Hyprland keybinding (~/.config/hypr/hyprland.conf):
+
 bind=SUPER,Y,exec,~/display-extension-linux-to-tablet/scripts/extend_tablet.sh start
 bind=SUPER,SHIFT,Y,exec,~/display-extension-linux-to-tablet/scripts/extend_tablet.sh stop
 
 6. On Tablet
+
 Install any VNC viewer (e.g., bVNC, VNC Viewer)
 
 Connect to the Linux PC using its IP and port 5900
 
 7. Troubleshooting
+
 # Usage on CLI:
 Start extending screen:
 ./scripts/extend_tablet.sh start
