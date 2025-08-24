@@ -1,4 +1,4 @@
-# Hyprland Tablet wayvnc Extension
+# Hyprland Tablet wayvnc display Extension from Linux to Android Tablet
 
 This project allows you to extend your Linux desktop to a tablet using WayVNC with **Hyprland**.
 
